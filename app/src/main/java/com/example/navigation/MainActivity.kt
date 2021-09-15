@@ -31,15 +31,17 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+println("########################begin")
         setContentView(binding.root)
-
-        setupActionBarWithNavController(navController, appBarConfiguration)
+        println("########################setContentView(binding.root)")
+        //setupActionBarWithNavController(navController, appBarConfiguration)
+        println("########################setupActionBarWithNavController(navController, appBarConfiguration)")
         binding.navigationView.setupWithNavController(navController)
-
+        println("########################binding.navigationView.setupWithNavController(navController)")
 
         binding.navigationView.getOrCreateBadge(R.id.home).apply {
             backgroundColor = ContextCompat.getColor(this@MainActivity, R.color.purple_200)
         }
+        println("########################binding.navigationView")
     }
 }
