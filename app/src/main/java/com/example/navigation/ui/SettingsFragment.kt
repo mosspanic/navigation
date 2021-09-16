@@ -8,4 +8,5 @@ class SettingsFragment: Fragment(R.layout.fragment_settings){
     init{
         println("######################get SettingsFragment")
     }
+
 }

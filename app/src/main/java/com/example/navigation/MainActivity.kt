@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-println("########################begin")
+        println("########################begin")
         setContentView(binding.root)
         println("########################setContentView(binding.root)")
         //setupActionBarWithNavController(navController, appBarConfiguration)
