@@ -13,7 +13,7 @@ import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.example.navigation.databinding.ActivityMainBinding
-
+//https://medium.com/nuances-of-programming/%D0%B2%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-navigation-architecture-component-3ae47a267edc
 class MainActivity : AppCompatActivity() {
     private val appBarConfiguration by lazy {
         AppBarConfiguration(setOf(
