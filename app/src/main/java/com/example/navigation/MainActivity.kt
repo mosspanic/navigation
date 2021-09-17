@@ -2,6 +2,7 @@ package com.example.navigation
 
 import android.os.Bundle
 import android.view.Menu
+import android.widget.Switch
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
 import androidx.navigation.findNavController
@@ -13,6 +14,11 @@ import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.example.navigation.databinding.ActivityMainBinding
+import android.widget.CompoundButton
+import androidx.fragment.app.Fragment
+import com.example.bottomnavigationexample.ui.fragments.SettingsFragment
+
+
 //https://medium.com/nuances-of-programming/%D0%B2%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-navigation-architecture-component-3ae47a267edc
 class MainActivity : AppCompatActivity() {
     private val appBarConfiguration by lazy {
@@ -43,5 +49,21 @@ class MainActivity : AppCompatActivity() {
             backgroundColor = ContextCompat.getColor(this@MainActivity, R.color.purple_200)
         }
         println("########################binding.navigationView")
+        /*val standardSwitch1:Switch = findViewById(R.id.switch1)
+        println("########################standardSwitch1:Switch")
+        standardSwitch1.setOnCheckedChangeListener { buttonView, isChecked ->
+            if(isChecked){
+                println("##########Standard Switch is on")
+            }else{
+                println("#############Standard Switch is off")
+            }
+        }*/
+       /* val standardSwitch1:Switch = findViewById(R.id.switch1)
+        println("########################standardSwitch1:Switch")
+        standardSwitch1.setOnCheckedChangeListener(CompoundButton.OnCheckedChangeListener { buttonView, isChecked ->
+            // do something, the isChecked will be
+            // true if the switch is in the On position
+        })*/
     }
+
 }
