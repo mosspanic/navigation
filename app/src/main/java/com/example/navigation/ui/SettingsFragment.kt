@@ -45,6 +45,45 @@ class SettingsFragment: Fragment2(R.layout.fragment_settings){
                 fs.invalidate()
             }
         }
+
+        val swit2 = sw.findViewById<Switch>(R.id.switch2)
+        swit2.setOnCheckedChangeListener { buttonView, isChecked ->
+            if(isChecked){
+                println("##########Standard Switch is on")
+                val fs=sw.findViewById<View>(R.id.fset)
+                val txt="переключатель 2 включен"
+                val duration= Toast.LENGTH_SHORT
+                val toast=Toast.makeText(activity,txt,duration)
+                toast.show()
+            }else{
+                println("#############Standard Switch is off")
+                val fs=sw.findViewById<View>(R.id.fset)
+                val txt="переключатель 2 выключен"
+                val duration= Toast.LENGTH_SHORT
+                val toast=Toast.makeText(activity,txt,duration)
+                toast.show()
+            }
+        }
+
+        val swit3 = sw.findViewById<Switch>(R.id.switch2)
+        swit3.setOnCheckedChangeListener { buttonView, isChecked ->
+            if(isChecked){
+                println("##########Standard Switch is on")
+                val fs=sw.findViewById<View>(R.id.fset)
+                val txt="переключатель 3 включен"
+                val duration= Toast.LENGTH_SHORT
+                val toast=Toast.makeText(activity,txt,duration)
+                toast.show()
+            }else{
+                println("#############Standard Switch is off")
+                val fs=sw.findViewById<View>(R.id.fset)
+                val txt="переключатель 3 выключен"
+                val duration= Toast.LENGTH_SHORT
+                val toast=Toast.makeText(activity,txt,duration)
+                toast.show()
+            }
+        }
+
         return sw
     }
 }
